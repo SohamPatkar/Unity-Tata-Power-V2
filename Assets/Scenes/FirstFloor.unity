@@ -62629,6 +62629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: be8f170f213d5c748a16c7b84993569e, type: 2}
+  _origin: {fileID: 48903836}
 --- !u!1 &1520120290
 GameObject:
   m_ObjectHideFlags: 0

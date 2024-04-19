@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class MaterialScript : MonoBehaviour
     [SerializeField]
     public Material m_Material;
     private float offsetX;
+    [SerializeField]
+    private XROrigin _origin;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,7 @@ public class MaterialScript : MonoBehaviour
 
     public void OnClickLocation()
     {
+        _origin.transform.position = Vector3.zero;
         SceneManager.LoadScene("LocationSelect");
     }
 }

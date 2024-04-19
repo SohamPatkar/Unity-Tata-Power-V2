@@ -6,9 +6,6 @@ using UnityEngine.XR.ARCore;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-
-
-
 public class SetPosition : MonoBehaviour
 {
     [SerializeField]
