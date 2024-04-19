@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.XR;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class LocationsArray : MonoBehaviour
 {
@@ -11,12 +15,14 @@ public class LocationsArray : MonoBehaviour
     private GameObject _followCam;
     void Start()
     {
+        this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
         _locationName = LocationManager.Instance.GetLocationName();
         foreach (GameObject item in _locations)
         {
             if(item.name == _locationName)
             {
-                gameObject.transform.position = new Vector3(item.transform.position.x, gameObject.transform.position.y, item.transform.position.z);
+                transform.position = item.transform.position;
+                this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
             }
         }
     }
@@ -24,6 +30,6 @@ public class LocationsArray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(_followCam.transform.position.x, transform.position.y, _followCam.transform.position.z);
+        //transform.position = new Vector3(_followCam.transform.position.x, transform.position.y, _followCam.transform.position.z);
     }
 }

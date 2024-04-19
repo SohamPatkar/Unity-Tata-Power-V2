@@ -15,7 +15,7 @@ public class RaycastScript : MonoBehaviour
             GameObject objectHit = hit.collider.gameObject;
             foreach (GameObject item in Info)
             {
-                if (item.name == "InfoScreen_" + objectHit.name)
+                if (item.name == "InfoPopup_" + objectHit.name)
                 {
                     item.SetActive(true);
                     item.transform.localScale = Vector3.Lerp(item.transform.localScale, Vector3.one, Time.deltaTime * 0.5f);

@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/First_Scene.unity
-    guid: 4b62061b4eda46348b69eabd590a5812
-  - enabled: 1
-    path: Assets/Scenes/Template_QR.unity
-    guid: 23c8bfd377c30c641bbdc9ef479d0f9a
+    path: Assets/Scenes/LocationSelect.unity
+    guid: d62b30ded2b771944904f0e07168137f
   - enabled: 1
     path: Assets/Scenes/FirstFloor.unity
     guid: 4755b35b590504809a7525fd2109c2e2
