@@ -140,14 +140,7 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 1.0.0
-  preloadedAssets:
-  - {fileID: 11400000, guid: 533ff7c5515099848a4dd89ae891883d, type: 2}
-  - {fileID: 4800000, guid: e7c77f6eaab324a819efdc13b8125a39, type: 3}
-  - {fileID: 4800000, guid: 6743a50a812740be8c0aa3fccc46fae9, type: 3}
-  - {fileID: 11400000, guid: 0b53a025a635a4393ba0b49822242280, type: 2}
-  - {fileID: -9040095145825923671, guid: fc1d6561032106e469359462cc9b4bd1, type: 2}
-  - {fileID: 11400000, guid: c199e683398494f32b4cde18e73ab731, type: 2}
-  - {fileID: 8988736026231827751, guid: b07c4ba7650be4c25b3d0c497e7e2bb8, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -170,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.unity.template.ar_mobile
     Standalone: com.unity.template.ar-mobile
-    iPhone: com.unity.template.armobile
+    iPhone: com.tatapower.visitor-security
   buildNumber:
     Bratwurst: 0
     Standalone: 0
@@ -195,7 +188,7 @@ PlayerSettings:
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 12.0
+  iOSTargetOSVersionString: 12.4
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 12.0
