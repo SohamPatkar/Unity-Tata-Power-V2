@@ -28,11 +28,11 @@ public class SetPosition : MonoBehaviour
     {
         _timer += 1 * Time.deltaTime;
         transform.position = new Vector3(positionObject.transform.position.x, initialYPosition, positionObject.transform.position.z);
-        if(_timer >= 10)
-        {
-            _panel.SetActive(false);
-        }
-        Debug.Log(_timer);
+        // if (_timer >= 10)
+        // {
+        //     _panel.SetActive(false);
+        // }
+        // Debug.Log(_timer);
     }
 
     void LocationSet()

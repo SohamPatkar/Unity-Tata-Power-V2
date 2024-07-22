@@ -22,6 +22,16 @@ public class LocationManager : MonoBehaviour
         }
     }
 
+    public string GetFloor()
+    {
+        return locationObject._floor.ToString();
+    }
+
+    public void SetFloor(string floor)
+    {
+        locationObject._floor = floor;
+    }
+
     public string GetLevelName()
     {
         return locationObject._Level_Name.ToString();

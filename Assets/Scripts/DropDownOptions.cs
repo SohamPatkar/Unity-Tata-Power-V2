@@ -25,5 +25,4 @@ public class DropDownOptions : MonoBehaviour
         dropdown.ClearOptions();
         dropdown.AddOptions(options);
     }
-
 }

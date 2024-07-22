@@ -5,24 +5,23 @@ using UnityEngine.AI;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 public class LocationsArray : MonoBehaviour
 {
-    [SerializeField]
-    public GameObject[] _locations;
+    [SerializeField] public GameObject[] _locations;
     public string _locationName;
-    [SerializeField]
-    private GameObject _followCam;
+    [SerializeField] private GameObject _followCam;
     void Start()
     {
-        this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+        gameObject.GetComponent<NavMeshAgent>().enabled = false;
         _locationName = LocationManager.Instance.GetLocationName();
         foreach (GameObject item in _locations)
         {
-            if(item.name == _locationName)
+            if (item.name == _locationName)
             {
                 transform.position = item.transform.position;
-                this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
+                gameObject.GetComponent<NavMeshAgent>().enabled = true;
             }
         }
     }
@@ -30,6 +29,6 @@ public class LocationsArray : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position = new Vector3(_followCam.transform.position.x, transform.position.y, _followCam.transform.position.z);
+        transform.position = new Vector3(_followCam.transform.position.x, transform.position.y, _followCam.transform.position.z);
     }
 }
