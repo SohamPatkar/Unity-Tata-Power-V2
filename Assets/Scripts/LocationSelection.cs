@@ -72,6 +72,24 @@ public class LocationSelection : MonoBehaviour
         SceneManager.LoadScene("FirstFloor");
     }
 
+    public void ExitFirstFloor()
+    {
+        LocationManager.Instance.SetLocationName("LiftFirstFloor");
+        LocationManager.Instance.SetFloor("FirstFloor");
+        levelStorage._selectedlevelname = LocationManager.Instance.GetFloor();
+        _locationInfo.text = "Exit selected!";
+        SceneManager.LoadScene("FirstFloor");
+    }
+
+    public void Washroom()
+    {
+        LocationManager.Instance.SetLocationName("Washroom");
+        LocationManager.Instance.SetFloor("FirstFloor");
+        levelStorage._selectedlevelname = LocationManager.Instance.GetFloor();
+        _locationInfo.text = "Washroom selected!";
+        SceneManager.LoadScene("FirstFloor");
+    }
+
     public void ServerRoom()
     {
         LocationManager.Instance.SetLocationName("ServerRoom");

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -26,6 +24,6 @@ public class RaycastScript : MonoBehaviour
                     item.transform.localScale = Vector3.zero;
                 }
             }
-        }   
+        }
     }
 }
