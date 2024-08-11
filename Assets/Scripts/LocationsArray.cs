@@ -26,7 +26,6 @@ public class LocationsArray : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(_followCam.transform.position.x, transform.position.y, _followCam.transform.position.z);
