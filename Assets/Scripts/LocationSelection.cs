@@ -91,16 +91,16 @@ public class LocationSelection : MonoBehaviour
     public void ServerRoom()
     {
         LocationManager.Instance.SetLocationName("ServerRoom");
-        LocationManager.Instance.SetFloor("SecondFLoor");
+        LocationManager.Instance.SetFloor("SecondFloor");
         levelStorage._selectedlevelname = LocationManager.Instance.GetFloor();
-        _locationInfo.text = "Server Room selected!";
+        _locationInfo.text = "Washroom Second Floor selected!";
         SceneManager.LoadScene("FirstFloor");
     }
 
     public void CCRA()
     {
         LocationManager.Instance.SetLocationName("CCRA");
-        LocationManager.Instance.SetFloor("SecondFLoor");
+        LocationManager.Instance.SetFloor("SecondFloor");
         levelStorage._selectedlevelname = LocationManager.Instance.GetFloor();
         _locationInfo.text = "CCRA selected!";
         SceneManager.LoadScene("FirstFloor");
