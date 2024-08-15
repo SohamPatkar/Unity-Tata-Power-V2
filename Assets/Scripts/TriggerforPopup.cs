@@ -6,10 +6,18 @@ public class TriggerforPopup : MonoBehaviour
 {
     [SerializeField] public Text text;
     [SerializeField] public GameObject _panel;
+    [SerializeField] public GameObject _messageBox;
+
+    void Start()
+    {
+        _messageBox.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("IndicatorGroundFloor"))
         {
+            _messageBox.SetActive(true);
             _panel.SetActive(true);
             if (this.gameObject.transform.position.y > 0)
             {
@@ -25,5 +33,10 @@ public class TriggerforPopup : MonoBehaviour
             }
             Debug.Log("You have entered the collision!");
         }
+    }
+
+    public void OnPressExit()
+    {
+        _messageBox.SetActive(false);
     }
 }

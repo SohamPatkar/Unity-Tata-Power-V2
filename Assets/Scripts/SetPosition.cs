@@ -65,6 +65,26 @@ public class SetPosition : MonoBehaviour
             case "T&DOffice":
                 _textSuggestion.text = "Select Fire Hydrant One";
                 break;
+
+            case "MainControlRoom":
+                _textSuggestion.text = "Select Fire Hydrant Second Floor 4";
+                break;
+
+            case "EntranceLobby":
+                _textSuggestion.text = "Select Fire Hydrant Second Floor 1";
+                break;
+
+            case "CCRA":
+                _textSuggestion.text = "Select Fire Hydrant Second Floor 2";
+                break;
+
+            case "ServerRoom":
+                _textSuggestion.text = "Select Fire Hydrant Second Floor 6";
+                break;
+
+            case "ControlRoom":
+                _textSuggestion.text = "Select Fire Hydrant Second Floor 6";
+                break;
         }
     }
 }
