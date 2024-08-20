@@ -12,6 +12,7 @@ public class LocationsArray : MonoBehaviour
     [SerializeField] public GameObject[] _locations;
     public string _locationName;
     [SerializeField] private GameObject _followCam;
+    [SerializeField] private GameObject _arrowparent;
     void Start()
     {
         gameObject.GetComponent<NavMeshAgent>().enabled = false;
@@ -21,6 +22,8 @@ public class LocationsArray : MonoBehaviour
             if (item.name == _locationName)
             {
                 transform.position = item.transform.position;
+                _arrowparent.transform.position = item.transform.position;
+                _arrowparent.transform.rotation = item.transform.rotation;
                 gameObject.GetComponent<NavMeshAgent>().enabled = true;
             }
         }
