@@ -17,11 +17,11 @@ public class PopUpScript : MonoBehaviour
         _levelselectname = levelstorageObject._selectedlevelname;
         if (_levelselectname == "FirstFloor")
         {
-            _popupText.text = "You can select option Exit 2!";
+            _popupText.text = "Exit 2";
         }
         else if (_levelselectname == "SecondFloor")
         {
-            _popupText.text = "You can select option Exit 3!";
+            _popupText.text = "Exit 3";
         }
     }
 }

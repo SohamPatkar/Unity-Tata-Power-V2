@@ -4,12 +4,15 @@ using UnityEngine.UI;
 
 public class TriggerforPopup : MonoBehaviour
 {
-    [SerializeField] public Text text;
-    [SerializeField] public GameObject _panel;
+    [SerializeField] public GameObject _messageBoxText, _secondFloorText;
     [SerializeField] public GameObject _messageBox;
+    [SerializeField] public GameObject _alternateExitPopup;
 
     void Start()
     {
+        _messageBoxText.SetActive(false);
+        _secondFloorText.SetActive(false);
+        _alternateExitPopup.SetActive(false);
         _messageBox.SetActive(false);
     }
 
@@ -17,22 +20,31 @@ public class TriggerforPopup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("IndicatorGroundFloor"))
         {
-            _messageBox.SetActive(true);
-            _panel.SetActive(true);
             if (this.gameObject.transform.position.y > 0)
             {
-                text.text = "You can choose EntranceGroundFloor Option";
+                _messageBoxText.SetActive(false);
+                _secondFloorText.SetActive(true);
+                _messageBox.SetActive(true);
             }
             else if (this.gameObject.transform.position.y < 0 && this.transform.position.y > -3)
             {
-                text.text = "You can choose EntranceGroundFloor Option";
+                _secondFloorText.SetActive(false);
+                _messageBoxText.SetActive(true);
+                _messageBox.SetActive(true);
             }
             else if (this.gameObject.transform.position.y > -8)
             {
-                text.text = "You can choose FrontEntrance Option";
+                _alternateExitPopup.SetActive(true);
             }
             Debug.Log("You have entered the collision!");
         }
+    }
+
+    public void Disable()
+    {
+        _alternateExitPopup.SetActive(false);
+        _messageBoxText.SetActive(false);
+        _secondFloorText.SetActive(false);
     }
 
     public void OnPressExit()

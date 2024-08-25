@@ -13,20 +13,21 @@ public class SetPosition : MonoBehaviour
     private string _locationName;
     private float initialYPosition;
     public Text _textSuggestion;
-    private float _timer;
+    // private float _timer;
     public GameObject _panel;
-
+    public float _clickCounter;
     // Start is called before the first frame update
     void Start()
     {
         LocationSet();
         ClosestHydrant();
+        _clickCounter = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _timer += 1 * Time.deltaTime;
+        // _timer += 1 * Time.deltaTime;
         transform.position = new Vector3(positionObject.transform.position.x, initialYPosition, positionObject.transform.position.z);
         // if (_timer >= 10)
         // {
@@ -51,40 +52,51 @@ public class SetPosition : MonoBehaviour
         switch (_locationName)
         {
             case "PSCCCenter":
-                _textSuggestion.text = "Select Fire Hydrant TWO";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Two' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ConferenceRoom":
-                _textSuggestion.text = "Select Fire Hydrant Three";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Three' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "PacificTraining":
-                _textSuggestion.text = "Select Fire Hydrant One";
+                _textSuggestion.text = "(You can select 'Fire Hydrant One' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "T&DOffice":
-                _textSuggestion.text = "Select Fire Hydrant One";
+                _textSuggestion.text = "(You can select 'Fire Hydrant One' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "MainControlRoom":
-                _textSuggestion.text = "Select Fire Hydrant Second Floor 4";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 4' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "EntranceLobby":
-                _textSuggestion.text = "Select Fire Hydrant Second Floor 1";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 1' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "CCRA":
-                _textSuggestion.text = "Select Fire Hydrant Second Floor 2";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 2' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ServerRoom":
-                _textSuggestion.text = "Select Fire Hydrant Second Floor 6";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 6' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ControlRoom":
-                _textSuggestion.text = "Select Fire Hydrant Second Floor 6";
+                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 6' from the drop-down, as it’s the nearest.)";
                 break;
+        }
+    }
+
+    public void OnclickAlternate()
+    {
+        ++_clickCounter;
+        _panel.SetActive(true);
+        if (_clickCounter > 1)
+        {
+            _panel.SetActive(false);
+            _clickCounter = 0;
         }
     }
 }
