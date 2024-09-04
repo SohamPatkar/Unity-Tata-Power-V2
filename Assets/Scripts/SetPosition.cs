@@ -52,39 +52,39 @@ public class SetPosition : MonoBehaviour
         switch (_locationName)
         {
             case "PSCCCenter":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Two' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Two' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ConferenceRoom":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Three' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Three' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "PacificTraining":
-                _textSuggestion.text = "(You can select 'Fire Hydrant One' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher One' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "T&DOffice":
-                _textSuggestion.text = "(You can select 'Fire Hydrant One' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher One' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "MainControlRoom":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 4' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Five' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "EntranceLobby":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 1' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Four' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "CCRA":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 2' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Four' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ServerRoom":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 6' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Nine' from the drop-down, as it’s the nearest.)";
                 break;
 
             case "ControlRoom":
-                _textSuggestion.text = "(You can select 'Fire Hydrant Second Floor 6' from the drop-down, as it’s the nearest.)";
+                _textSuggestion.text = "(You can select 'Fire Extinguisher Nine' from the drop-down, as it’s the nearest.)";
                 break;
         }
     }

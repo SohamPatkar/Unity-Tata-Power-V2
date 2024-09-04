@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 81428636}
   - component: {fileID: 81428637}
   m_Layer: 0
-  m_Name: FireHYD.Two
+  m_Name: Fire Extinguisher Two
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1931,7 +1931,7 @@ PrefabInstance:
     - target: {fileID: 561346387984048411, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor6
+      value: Fire Extinguisher Nine
       objectReference: {fileID: 0}
     - target: {fileID: 561346387984048411, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2091,7 +2091,7 @@ PrefabInstance:
     - target: {fileID: 2909976190101089916, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor5
+      value: Fire Extinguisher Eight
       objectReference: {fileID: 0}
     - target: {fileID: 2909976190101089916, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2156,7 +2156,7 @@ PrefabInstance:
     - target: {fileID: 4014782246198691066, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor7
+      value: Fire Extinguisher Ten
       objectReference: {fileID: 0}
     - target: {fileID: 4014782246198691066, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2216,7 +2216,7 @@ PrefabInstance:
     - target: {fileID: 4780485215629088560, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor4
+      value: Fire Extinguisher Five
       objectReference: {fileID: 0}
     - target: {fileID: 4780485215629088560, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2281,7 +2281,7 @@ PrefabInstance:
     - target: {fileID: 5209915384374486494, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor2
+      value: Fire Extinguisher Six
       objectReference: {fileID: 0}
     - target: {fileID: 5209915384374486494, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2391,7 +2391,7 @@ PrefabInstance:
     - target: {fileID: 7096249067577261161, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor3
+      value: Fire Extinguisher Seven
       objectReference: {fileID: 0}
     - target: {fileID: 7096249067577261161, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -2496,7 +2496,7 @@ PrefabInstance:
     - target: {fileID: 8203104239994154007, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
       propertyPath: m_Name
-      value: FireHydrantSecondFloor1
+      value: Fire Extinguisher Four
       objectReference: {fileID: 0}
     - target: {fileID: 8203104239994154007, guid: 6144a1d409e9cbf4c97d3be06f67699c,
         type: 3}
@@ -62822,7 +62822,7 @@ GameObject:
   - component: {fileID: 912202568}
   - component: {fileID: 912202569}
   m_Layer: 0
-  m_Name: FireHYD.One
+  m_Name: Fire Extinguisher One
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -62999,7 +62999,7 @@ GameObject:
   - component: {fileID: 936375868}
   - component: {fileID: 936375869}
   m_Layer: 0
-  m_Name: FireHYD.Three
+  m_Name: Fire Extinguisher Three
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -64470,7 +64470,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 7.9748535}
-  m_SizeDelta: {x: 0, y: 150}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1136616561
 MonoBehaviour:
