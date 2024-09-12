@@ -93,9 +93,11 @@ public class SetPosition : MonoBehaviour
     {
         ++_clickCounter;
         _panel.SetActive(true);
+        LeanTween.moveX(_panel.GetComponent<RectTransform>(), 447f, 0.5f);
         if (_clickCounter > 1)
         {
-            _panel.SetActive(false);
+            LeanTween.moveX(_panel.GetComponent<RectTransform>(), -1500, 0.5f);
+            // _panel.SetActive(false);
             _clickCounter = 0;
         }
     }

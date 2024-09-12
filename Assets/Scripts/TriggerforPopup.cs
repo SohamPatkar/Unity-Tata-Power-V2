@@ -35,6 +35,7 @@ public class TriggerforPopup : MonoBehaviour
             else if (this.gameObject.transform.position.y > -8)
             {
                 _alternateExitPopup.SetActive(true);
+                LeanTween.alpha(_alternateExitPopup.GetComponent<RectTransform>(), 1f, 0.5f);
             }
             Debug.Log("You have entered the collision!");
         }
